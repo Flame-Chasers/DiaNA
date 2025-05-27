@@ -1,4 +1,4 @@
-# 【CVPR 2025】Chat-based Person Retrieval via Dialogue-Refined Cross-Modal Alignment
+# 🔥【CVPR 2025】Chat-based Person Retrieval via Dialogue-Refined Cross-Modal Alignment
 
 This repository offers the official implementation of DiaNA in PyTorch.
 
