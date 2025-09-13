@@ -23,7 +23,24 @@ the conversational and visual information for fine-grained cross-modal alignment
 ## 📌 TODO
 - [ ] Release code
 - [ ] Release checkpoints
-- [ ] Release dataset (ChatPedes)
+- [x] Release dataset (ChatPedes)
+
+
+
+## 🗂️ Data Preparation
+1. Download images from [CUHK-PEDES](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description).
+2. Download ChatPedes annotation files from [here](https://drive.google.com/drive/folders/1-4TjZZ4Z5ANIn3Rx_iBP-MAsu7X28Cob?usp=sharing).
+3. Organize the dataset as follows:
+```
+<ROOT>/ChatPedes
+    - train_reid.json
+    - test_reid.json
+    - imgs
+        - cam_a
+        - cam_b
+        - ...
+```
+
 
 
 ## ✨ Citation
@@ -33,6 +50,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
     author    = {Bai, Yang and Ji, Yucheng and Cao, Min and Wang, Jinqiao and Ye, Mang},
     title     = {Chat-based Person Retrieval via Dialogue-Refined Cross-Modal Alignment},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages     = {3952--3962},
     month     = {June},
     year      = {2025}
 }
