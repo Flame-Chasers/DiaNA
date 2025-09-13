@@ -21,9 +21,9 @@ the conversational and visual information for fine-grained cross-modal alignment
 
 
 ## 📌 TODO
-- [ ] Release code
-- [ ] Release checkpoints
-- [x] Release dataset (ChatPedes)
+- ⏳ Release code
+- ⏳ Release checkpoints
+- ✅ Release dataset (ChatPedes)
 
 
 
