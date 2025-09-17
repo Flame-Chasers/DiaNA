@@ -21,8 +21,8 @@ the conversational and visual information for fine-grained cross-modal alignment
 
 
 ## 📌 TODO
-- ⏳ Release code
-- ⏳ Release checkpoints
+- ✅ Release code
+- ✅ Release checkpoints
 - ✅ Release dataset
 
 
@@ -69,6 +69,7 @@ bash shell/pretrain.sh
 ---
 
 ### 🔹 Stage 2: Fine-tuning on ChatPedes
+
 **Run Fine-tuning:**
 ```bash
 cd DiaNA/train
@@ -80,6 +81,19 @@ bash shell/finetune.sh
 - 🤗 [Fine-tuned Checkpoint](https://huggingface.co/byougert/DiaNA/tree/main)
 - 📜 [Training Log](https://drive.google.com/file/d/1KBmX0JFMOA0e_ehMh3pKr-KqKnWaXydJ/view?usp=sharing)
 
+
+
+
+## 🎯 Evaluation
+
+**Run Evaluation:**
+```bash
+cd DiaNA/eval
+bash shell/eval.sh
+```
+
+**Resources:**
+- 📜 [Evaluation Log](https://drive.google.com/file/d/1xgHSSCLERf3b3a6bNyZZphKpW6CbuIbO/view?usp=sharing)
 
 
 ## ✨ Citation

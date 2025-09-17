@@ -10,8 +10,8 @@ export TF_CPP_MIN_LOG_LEVEL=3
 export LAUNCHER=pytorch
 
 OUTPUT_DIR='work_dirs/pretrain'
-VISION_PRETRAINED='/data/byyoung/data/swin/swinv2_huggingface/swinv2-base-patch4-window12-192-22k'
-LLAMA_PRETRAINED='/data/byyoung/data/llama3/Llama-3.2-1B'
+VISION_PRETRAINED='<Swin Transformer Root>/swinv2-base-patch4-window12-192-22k'
+LLAMA_PRETRAINED='<Llama-3.2 Root>/Llama-3.2-1B'
 
 if [ ! -d "$OUTPUT_DIR" ]; then
   mkdir -p "$OUTPUT_DIR"
