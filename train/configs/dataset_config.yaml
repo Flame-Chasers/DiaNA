@@ -1,0 +1,58 @@
+chatpedes:
+  mean: [ 0.38901278, 0.3651612, 0.34836376 ]
+  std: [ 0.24344306, 0.23738699, 0.23368555 ]
+  image_root: '/data0/ReIDData/ChatPedes/imgs'
+  train_annotation: '/data0/ReIDData/ChatPedes/train_reid.json'
+  test_annotation: '/data0/ReIDData/ChatPedes/test_reid.json'
+
+
+mals:
+  image_root: '/data0/ReIDData/MALS'
+  mean: [ 0.4416847, 0.41812873, 0.4237452 ]
+  std: [ 0.3088255, 0.29743394, 0.301009 ]
+  train_annotation: [ '/data0/ReIDData/MALS/gene_attrs/g_4x_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_0_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_1_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_2_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_3_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_4_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_5_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_6_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_7_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_8_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_9_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_10_attrs.json','/data0/ReIDData/MALS/gene_attrs/g_c_g_a_11_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_12_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_13_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_14_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_15_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_16_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_17_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_18_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_19_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_20_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_21_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_22_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_23_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_24_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_25_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_26_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_27_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_28_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_29_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_30_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_31_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_32_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_33_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_34_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_35_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_36_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_37_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_38_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_39_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_40_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_41_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_42_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_c_g_a_43_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_0_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_1_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_2_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_3_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_4_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_5_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_6_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_7_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_8_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_9_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_10_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_11_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_12_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_13_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_14_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_15_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_16_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_17_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_18_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_19_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_20_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_21_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_22_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_23_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_24_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_25_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_26_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_27_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_28_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_29_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_30_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_31_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_32_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_33_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_34_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_35_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_36_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_37_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_38_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_39_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_40_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_41_attrs.json', '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_42_attrs.json',
+                      '/data0/ReIDData/MALS/gene_attrs/g_i_g_a_43_attrs.json' ]

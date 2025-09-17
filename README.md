@@ -23,23 +23,62 @@ the conversational and visual information for fine-grained cross-modal alignment
 ## 📌 TODO
 - ⏳ Release code
 - ⏳ Release checkpoints
-- ✅ Release dataset (ChatPedes)
+- ✅ Release dataset
 
 
 
 ## 🗂️ Data Preparation
-1. Download images from [CUHK-PEDES](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description).
-2. Download ChatPedes annotation files from [here](https://drive.google.com/drive/folders/1-4TjZZ4Z5ANIn3Rx_iBP-MAsu7X28Cob?usp=sharing).
+
+### 🔹 Pretraining Dataset
+- [MALS](https://github.com/Shuyu-XJTU/APTM), a large-scale synthetic TPR dataset with 1.5M image-text pairs
+
+### 🔹 Fine-tuning Dataset: ChatPedes
+1. Download images from [CUHK-PEDES](https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description)
+2. Download ChatPedes annotation files from [here](https://drive.google.com/drive/folders/1-4TjZZ4Z5ANIn3Rx_iBP-MAsu7X28Cob?usp=sharing)
 3. Organize the dataset as follows:
 ```
 <ROOT>/ChatPedes
     - train_reid.json
     - test_reid.json
-    - imgs
+    - imgs00
         - cam_a
         - cam_b
         - ...
 ```
+
+
+## 🏋️‍♂️ Training
+
+---
+
+### 🔹 Stage 1: Pretraining on MALS
+- **Image Encoder:** [Swin Transformer v2-B](https://huggingface.co/microsoft/swinv2-base-patch4-window12-192-22k)
+- **Dialogue Encoder:** [Llama 3.2-1B](https://huggingface.co/meta-llama/Llama-3.2-1B)
+
+**Run Pretraining:**
+```bash
+cd DiaNA/train
+bash shell/pretrain.sh
+```
+
+**Resources:**
+
+- 🤗 [Pretrained Checkpoint](https://huggingface.co/byougert/DiaNA-Pretrain/tree/main)
+- 📜 [Training Log](https://drive.google.com/file/d/1_6tMAPXI8asZcQVGCOh_qciBHzBv3NCN/view?usp=sharing)
+
+---
+
+### 🔹 Stage 2: Fine-tuning on ChatPedes
+**Run Fine-tuning:**
+```bash
+cd DiaNA/train
+bash shell/finetune.sh
+```
+
+**Resources:**
+
+- 🤗 [Fine-tuned Checkpoint](https://huggingface.co/byougert/DiaNA/tree/main)
+- 📜 [Training Log](https://drive.google.com/file/d/1KBmX0JFMOA0e_ehMh3pKr-KqKnWaXydJ/view?usp=sharing)
 
 
 

@@ -1,0 +1,103 @@
+{
+  "_commit_hash": null,
+  "_name_or_path": "./",
+  "architectures": [
+    "DiaNAModel"
+  ],
+  "embed_dim": 768,
+  "force_image_size": null,
+  "logit_scale": 50,
+  "label_smoothing": 0.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.1",
+  "use_vision_lora": 0,
+  "use_cache": false,
+  "use_decoder_only_language_model": true,
+  "use_llama_lora": 0,
+  "vision_config": {
+    "architectures": [
+      "Swinv2ForImageClassification"
+    ],
+    "attention_probs_dropout_prob": 0.0,
+    "depths": [
+      2,
+      2,
+      18,
+      2
+    ],
+    "drop_path_rate": 0.1,
+    "embed_dim": 128,
+    "encoder_stride": 32,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.0,
+    "hidden_size": 768,
+    "image_size": 192,
+    "initializer_range": 0.02,
+    "layer_norm_eps": 1e-05,
+    "mlp_ratio": 4.0,
+    "model_type": "swinv2",
+    "num_channels": 3,
+    "num_heads": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "num_layers": 4,
+    "patch_size": 4,
+    "path_norm": true,
+    "pretrained_window_sizes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "qkv_bias": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.21.0.dev0",
+    "use_absolute_embeddings": false,
+    "window_size": 12
+  },
+  "llama_config": {
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 128000,
+    "eos_token_id": 128001,
+    "head_dim": 64,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "initializer_range": 0.02,
+    "intermediate_size": 8192,
+    "max_position_embeddings": 131072,
+    "mlp_bias": false,
+    "model_type": "llama",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 16,
+    "num_key_value_heads": 8,
+    "pretraining_tp": 1,
+    "rms_norm_eps": 1e-05,
+    "rope_scaling": {
+      "factor": 32.0,
+      "high_freq_factor": 4.0,
+      "low_freq_factor": 1.0,
+      "original_max_position_embeddings": 8192,
+      "rope_type": "llama3"
+    },
+    "rope_theta": 500000.0,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.45.0.dev0",
+    "use_cache": false,
+    "vocab_size": 128256
+  },
+  "refiner_config": {
+    "enable": false,
+    "num_query": 16,
+    "num_hidden_layers": 2,
+    "sim_type": "avg"
+  }
+}
